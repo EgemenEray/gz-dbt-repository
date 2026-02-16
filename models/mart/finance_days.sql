@@ -15,7 +15,7 @@ with orders_per_day as
     Group by date_date
 )
 select 
-    , date_date
+      date_date
     , revenue
     , margin
     , operational_margin
