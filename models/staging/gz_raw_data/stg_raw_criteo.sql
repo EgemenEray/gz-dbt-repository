@@ -2,7 +2,7 @@ with
 
 source as (
     select * from {{ source('gz_raw_data', 'criteo')}}
-)
+),
 
 renamed as (
     select 

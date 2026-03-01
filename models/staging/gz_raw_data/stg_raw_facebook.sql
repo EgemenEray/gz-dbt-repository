@@ -2,7 +2,7 @@ with
 
 source as (
     select * from {{ source('gz_raw_data', 'facebook')}}
-)
+),
 
 renamed as (
     select 
