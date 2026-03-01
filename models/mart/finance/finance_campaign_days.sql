@@ -15,5 +15,5 @@ select
     ship_cost
 from {{ref('int_campaigns_day')}}
 FULL OUTER JOIN {{ref('finance_days')}}
-USING date_date
+USING (date_date)
 order by date_date DESC
